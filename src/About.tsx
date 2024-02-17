@@ -1,6 +1,6 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css'; // Import the CSS file
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Chat from './Chat.tsx'; 
 
 const About = () => {
   // Sample data for multiple cards
@@ -22,7 +22,10 @@ const About = () => {
               <p>Instagram: {profile.instagram}</p>
               <p>Followers: {profile.followers}</p>
               <div className="d-flex pt-1">
-                     <button className="btn btn-outline-primary me-1 flex-grow-1">Chat</button>
+              <Link to="/chat" className="attendees-link">
+                    <button className="btn btn-outline-primary me-1 flex-grow-1">Chat</button>
+                </Link>
+
                      <button className="btn btn-primary flex-grow-1">Follow</button>
                    </div>
             </div>

@@ -29,7 +29,7 @@ const Concerts = () => {
               <p>Instagram: {profile.instagram}</p>
               <p>Followers: {profile.followers}</p>
               <p>Rating: {profile.rating}</p>
-              <Link to="/about" className="attendees-link">See Attendees</Link>
+              <Link to="/about" className="attendees-link">See Attendees</Link> {/*make attendee list unique for each person*/}
             </div>
           </div>
         ))}
