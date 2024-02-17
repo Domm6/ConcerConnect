@@ -5,9 +5,9 @@ import './About.css'; // Import the CSS file
 const About: React.FC = () => {
   // Sample data for multiple cards
   const profiles = [
-    { name: 'Danny McLoan', university: 'uc berkeley', instagram: '@danny', followers: 976, rating: 8.5, image: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp' },
-    { name: 'Johnnny Doe', university: 'stanford', instagram: '@johnnythedoe', followers: 800, rating: 9.0, image: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp' },
-    { name: 'Jane Smith', university: 'uc irivine', instagram: '@smith_jane', followers: 1200, rating: 8.2, image: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-3.webp' }
+    { name: 'Danny McLoan', university: 'uc berkeley', instagram: '@danny', followers: 976, image: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp' },
+    { name: 'Johnnny Doe', university: 'stanford', instagram: '@johnnythedoe', followers: 800, image: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp' },
+    { name: 'Jane Smith', university: 'uc irivine', instagram: '@smith_jane', followers: 1200,  image: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-3.webp' }
   ];
 
   return (
@@ -40,10 +40,6 @@ const About: React.FC = () => {
                         <div className="px-3">
                           <p className="small text-muted mb-1">Followers</p>
                           <p className="mb-0">{profile.followers}</p>
-                        </div>
-                        <div>
-                          <p className="small text-muted mb-1">Rating</p>
-                          <p className="mb-0">{profile.rating}</p>
                         </div>
                       </div>
                       <div className="d-flex pt-1">
