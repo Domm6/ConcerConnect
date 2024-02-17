@@ -1,6 +1,10 @@
 .custom-col {
-    max-width: 300px;
-    flex: 1;
-    margin: 0 10px;
+    /* max-width: 300px; */
+    /* justify-content: flex-start; */
+    /* flex-direction: row ; */
+    flex-wrap: wrap ;
+    margin: 0 auto;
+    
   }
   
+
