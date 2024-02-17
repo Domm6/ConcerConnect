@@ -16,7 +16,7 @@ function App() {
         <nav>
           <ul className="navbar">
             <li>
-              <Link to="/Home">Home</Link>
+              <Link to="/home">Home</Link>
             </li>
             <li>
               <Link to="/concerts">Concerts</Link>
@@ -36,11 +36,11 @@ function App() {
 
         <h1>Concert Connect</h1>
        
-       
+
          
 
         <Routes>
-          <Route path="/about" element={<About />} /> {/* Use the About component */}
+          <Route path="/home" element={<Concerts />} /> {/* Use the About component */}
           <Route path="/concerts" element={<Concerts />} /> {/* Use the About component */}
           <Route path="/profile" element={<Profile />} /> {/* Use the About component */}
           <Route path="/login" element={<Login />} /> {/* Use the Login component */}
