@@ -1,31 +1,45 @@
+.profile-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+.link{
+  color: #646cffaa;
+}
 
-   .profile-section {
-    background-color: #646cffaa;;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center; /* Align the content to the center */
-  }
-  
-  .profile-section h3 {
-    margin-top: 0;
-  }
-  
-  .profile-info {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Align items horizontally to the center */
-    flex-direction: column; /* Align items vertically to the center */
-  }
-  
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px; /* Add some spacing between the picture and details */
-  }
-  
-  .profile-details p {
-    margin: 5px 0;
-  }
-  
+
+.profile-section h2 {
+  margin-top: 0;
+  color: #646cffaa; /* Set text color to white */
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  color: #646cffaa; /* Set text color to white */
+}
+
+a {
+  color: #646cffaa; /* Set link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

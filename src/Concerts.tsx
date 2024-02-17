@@ -1,6 +1,6 @@
-import React from 'react';
-import './Concerts.css'; // Import the CSS file
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './Concerts.css';
+import { Link } from 'react-router-dom';
+import SiteNav from './SiteBar';
 
 const Concerts = () => {
   const profiles = [
@@ -11,15 +11,18 @@ const Concerts = () => {
 
   return (
     <div className="custom-col">
-      <form className="search-form">
+      {/* <form className="search-form">
         <input
           type="text"
           placeholder="Search for upcoming concerts!"
           className="search-input"
         />
         <button type="submit" className="search-btn">Search</button>
-      </form>
+      </form> */}
+      <SiteNav></SiteNav>
+      <h2>Concerts Near You!</h2>
       <div className="concert-cards">
+        
         {profiles.map((profile, index) => (
           <div key={index} className="concert-card">
             <img src={profile.image} alt="Concert" className="concert-image" />

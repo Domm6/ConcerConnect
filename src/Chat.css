@@ -2,6 +2,7 @@
 .chat-app {
     display: flex;
     height: 100vh; /* Full height */
+    margin-top: 30px;
   }
   
   /* Sidebar */
