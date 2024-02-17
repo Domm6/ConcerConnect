@@ -1,42 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { useQuery } from "convex/react";
-import { api } from "../convex/_generated/api";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import About from './About'; // Import the About component
+import Profile from './Profile'; 
+import './App.css'; // Import CSS for styling
+import Concerts from './Concerts';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const tasks = useQuery(api.tasks.get);
+  
+  
   return (
-    <>
-    <div className="App">
-      {tasks?.map(({ _id, text }) => (
-        <div key={_id}>{text}</div>
-      ))}
-    </div>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div className="container">
+        <nav>
+          <ul className="navbar">
+            <li>
+              <Link to="/Home">Home</Link>
+            </li>
+            <li>
+              <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+              <Link to="/concerts">Concerts</Link>
+            </li>
+            {/* Add more navigation links as needed */}
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/about" element={<About />} /> {/* Use the About component */}
+          <Route path="/profile" element={<Profile />} /> {/* Use the About component */}
+          <Route path="/concerts" element={<Concerts />} /> {/* Use the About component */}
+          {/* Add more routes as needed */}
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

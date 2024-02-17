@@ -24,8 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -65,4 +63,37 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f5f5f5; /* Light purple background */
+  padding: 20px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #9c8cfa; /* Purple background */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #7f5af0; /* Darker purple on hover */
 }
