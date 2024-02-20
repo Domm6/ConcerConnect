@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Concert Connect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Inspiration
 
-Currently, two official plugins are available:
+Concert Connect was born from the desire to transform the often solitary experience of attending concerts into a shared, communal adventure. Recognizing the common dilemma of missing out on live events due to the lack of a companion, our team envisioned a platform to bridge this gap, connecting fans with not only events but each other, based on shared musical passions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What is Concert Connect?
 
-## Expanding the ESLint configuration
+Concert Connect is an innovative web app designed to revolutionize how music enthusiasts discover and experience concerts. It enables users to seamlessly create profiles, search for concerts based on personal preferences, and connect with fellow fans. Through the creation or joining of groups, planning to attend concerts becomes a social and interactive journey, enhancing the overall concert-going experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How We Built It
 
-- Configure the top-level `parserOptions` property like this:
+The development of Concert Connect leveraged the robust Convex platform for backend operations, ensuring scalability and reliability. The frontend architecture was crafted using React.js, providing a dynamic and responsive interface. Tailwind CSS was integrated for its styling capabilities, offering an intuitive and aesthetically pleasing user experience. This tech stack selection ensured a potent combination of performance and user engagement.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Challenges
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Our journey was not without its hurdles. Being relatively new to React, we encountered challenges with routing and component setup. Despite our efforts, the chat feature remained incomplete by the deadline. However, this experience has been invaluable, laying the groundwork for future enhancements.
+
+## Accomplishments
+
+We take pride in the comprehensive features and layout of Concert Connect, from concert discovery and attendee interaction to the visually appealing presentation of events. This project stands as a testament to our team's dedication and innovative approach to solving real-world problems.
+
+## Lessons Learned
+
+This project was a significant learning curve for the team, offering hands-on experience with React and Convex. It was enlightening to see how these technologies synergize to create a functional and engaging application, providing insights we will carry into future projects.
+
+## What's Next for Concert Connect
+
+Looking forward, we aim to enrich Concert Connect with features that offer a more personalized and community-focused experience. From backend enhancements for user registration and data management to new functionalities like personalized recommendations, event reminders, and social sharing options. Our vision is to evolve Concert Connect into the ultimate hub for music enthusiasts worldwide.
+
+## DevPost Project Link
+
+For more detailed information about our project, challenges, and accomplishments, check out our [DevPost project page](https://devpost.com/software/concert-connect).
